@@ -1,0 +1,37 @@
+<div class="container" ng-init="init()">
+  <div class="row">
+    <div class="col-sm-12 text-center lng-container">
+      <button class="btn btn-default" ng-click="changeLanguage('en')">EN</button>
+      <button class="btn btn-default" ng-click="changeLanguage('fr')">FR</button>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h1 class="td-h1-label">Book an Appointment</h1>
+    <h3 class="td-h3-label">Our investing topic</h3>
+    <h2 class="td-h2-label">Pick a topic, then we'll find a time and place</h2>
+  </div>
+  <div class="row">
+    <div class="td-btn-container" ng-class="{
+        'col-sm-6': models.buttonLabels.length % 2 != 0 && models.buttonLabels.length != 1,
+        'col-sm-12 col-lg-8 col-lg-offset-2': models.buttonLabels.length % 2 == 0 || models.buttonLabels.length == 1
+        }">
+        <button ng-style="{height: models.maxHeight}"
+                class="td-btn"
+                ng-cloak
+                same-height-buttons
+                ng-repeat="label in models.buttonLabels track by $index">
+          <translate>{{label.key}}</translate>
+        </button>
+        </div>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <a href="#" class="td-link">
+        <i class="fa fa-angle-left"></i>
+        Return to previous screen
+      </a>
+    </div>
+  </div>
+</div>

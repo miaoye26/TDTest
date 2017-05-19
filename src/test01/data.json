@@ -1,0 +1,8 @@
+[
+    { "text": "Open a chequing account", "key": "label1"},
+    { "text": "Open a savings account", "key": "label2"},
+    { "text": "Open a U.S. Dollar account", "key": "label3" },
+    { "text": "Review my everyday canada is a country for all banking needs", "key": "label4" },
+    { "text": "Switch to TD", "key": "label5" },
+    { "text": "Apply for Overdraft Protection", "key": "label6" }
+]
