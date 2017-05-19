@@ -8,7 +8,7 @@ import 'angular-translate';
 
 import routesConfig from './routes';
 
-import testService from './test01/services';
+import buttonService from './test01/services';
 import sameHeightButtons from './test01/directives';
 
 import {hello} from './app/hello';
@@ -24,7 +24,7 @@ export const app = 'app';
 angular
   .module(app, ['ngAnimate', 'ngSanitize','ui.router', 'ui.bootstrap', 'pascalprecht.translate'])
   .config(routesConfig)
-  .service('testService', testService)
+  .service('buttonService', buttonService)
   .directive('sameHeightButtons', sameHeightButtons)
   .component('app', hello)
   .component('test01', test01)
